@@ -1,0 +1,13 @@
+[package]
+name = "android_hardware_common"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+binder = { path = "../binder" }

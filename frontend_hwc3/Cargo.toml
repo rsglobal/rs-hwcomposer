@@ -1,0 +1,28 @@
+[package]
+name = "frontend_hwc3"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+
+log = { workspace=true }
+anyhow = { workspace=true }
+nix = { workspace=true }
+
+android_logger = "0.14"
+
+binder = { path = "aidl/binder" }
+binder_ndk_sys = { path = "aidl/binder_ndk_sys" }
+android_hardware_common = { path = "aidl/android.hardware.common-V2" }
+android_hardware_graphics_common = { path = "aidl/android.hardware.graphics.common-V5" }
+android_hardware_graphics_composer3_V3 = { path = "aidl/android.hardware.graphics.composer3-V3" }
+
+buffer_gralloc = { path = "../buffer_gralloc" }
+internal_interface = { path = "../internal_interface" }
+manager = { path = "../manager" }

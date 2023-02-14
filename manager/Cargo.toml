@@ -1,0 +1,17 @@
+[package]
+name = "manager"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+anyhow = {workspace = true}
+log = {workspace = true}
+
+internal_interface = { path = "../internal_interface" }
+display_headless = { path = "../display_headless" }

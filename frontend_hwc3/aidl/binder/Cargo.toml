@@ -1,0 +1,29 @@
+# Cargo.toml
+
+# Multiplatform binding library for the binder IPC mechanism
+
+# arm64 code is located in arm64 directory
+
+# declare the library
+
+[package]
+name = "binder"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+binder_ndk_sys = { path = "../binder_ndk_sys" }
+
+libc = { workspace = true }
+
+downcast-rs = "1.2.0"
+
+[lib]
+# Disable doctests as a workaround for https://github.com/rust-lang/rust-bindgen/issues/1313
+doctest = false

@@ -1,0 +1,17 @@
+[package]
+name = "android_hardware_graphics_composer3_V3"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+android_hardware_graphics_common = { path = "../android.hardware.graphics.common-V5" }
+android_hardware_common = { path = "../android.hardware.common-V2" }
+binder = { path = "../binder" }
+async-trait = "0.1.87"
+lazy_static = "1.5.0"

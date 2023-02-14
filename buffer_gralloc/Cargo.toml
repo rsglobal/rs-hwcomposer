@@ -1,0 +1,17 @@
+[package]
+name = "buffer_gralloc"
+
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+log = {workspace = true}
+anyhow = {workspace = true}
+nix = {workspace = true}
+
+internal_interface = { path = "../internal_interface" }
